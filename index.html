@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en" title="Coding design">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: url('./background.png') no-repeat center center;
+            background-size: cover;
+            height: 400px;
+            background-attachment: fixed;
+            font-size: 20px;
+            cursor: url(../img/image.png), auto;
+        }
+
+        main.table {
+            width: 90%;
+            max-width: 900px;
+            background-color: #fff5;
+            box-shadow: 0 8px 16px #0005;
+            border-radius: 16px;
+            overflow: hidden;
+            margin: auto; /* Center the main table */
+        }
+
+        .header {
+            width: 100%;
+            background-color: #fff4;
+            padding: 0 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .shell {
+            width: 95%;
+            background-color: #fffb;
+            margin: 8px auto;
+            border-radius: 10px;
+            overflow: auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        td img {
+            width: 36px;
+            height: 36px;
+            margin-right: 10px;
+            border-radius: 50%;
+            vertical-align: middle;
+        }
+
+        th, td {
+            padding: 20px;
+            text-align: left;
+        }
+
+        thead th {
+            position: sticky;
+            top: 0;
+            background-color: #d5d1defe;
+            cursor: pointer;
+        }
+
+        tbody tr:nth-child(even) {
+            background-color: #0000000b;
+        }
+
+        tbody tr:hover {
+            background-color: #fff6 !important;
+        }
+
+        .ZY2 {
+            font-family: "微软雅黑";
+            color: white;
+            text-align: center;
+            text-shadow: 0 0 10px rgb(0, 255, 166), 0 0 20px rgb(68, 0, 255), 0 0 30px rgb(0, 255, 149), 0 0 40px red;
+        }
+
+        h1 {
+            background: linear-gradient(to right, #ff69b3, #fe0000, #ffa401, #ffff01, #008102, #40e1d2, #410098, #9400d4);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-size: 26px;
+            text-align: center; /* Center the heading */
+        }
+
+        @media (max-width: 768px) {
+            main.table {
+                width: 95%;
+            }
+        }
+    </style>
+    <style>
+        /* ... existing styles ... */
+    
+        @media (max-width: 768px) {
+            body {
+                font-size: 16px; /* 调整字体大小以适应小屏幕 */
+            }
+    
+            main.table {
+                width: 95%; /* 在小屏幕下增加宽度 */
+                padding: 10px; /* 增加内边距 */
+            }
+    
+            .header {
+                flex-direction: column; /* 使头部在小屏幕上垂直排列 */
+                align-items: flex-start; /* 左对齐 */
+            }
+    
+            .shell {
+                width: 100%; /* 使外壳宽度适应屏幕 */
+                margin: 10px 0; /* 增加上下间距 */
+            }
+    
+            table {
+                font-size: 14px; /* 调整表格字体大小 */
+        }
+    }
+    </style>
+    
+</head>
+
+<body>
+    <div>
+        <main class="table">
+            <section class="header"></section>
+            <section class="shell">
+                <h1>"金鳞岂是池中物 一遇风云便化龙"</h1>
+                <h1>qq:3022956493</h1>
+                <h1>闲鱼搜索:ler效率秒刷</h1>
+                <table id="dataTable">
+                    <thead>
+                        <tr>
+                            <th>物品💗</th>
+                            <th>数量💞</th>
+                            <th>价格🥰</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="ZY2">
+                            <td>新手号1</td>
+                            <td>全精灵+够上40W资源</td>
+                            <td>16R</td>
+                        </tr>
+                        <tr class="ZY2">
+                            <td>新手号2</td>
+                            <td>全精灵+够上44W资源</td>
+                            <td>16R</td>
+                        </tr>
+                        <tr class="ZY2">
+                            <td>新手号3</td>
+                            <td>全精灵+全资源99999+</td>
+                            <td>25R</td>
+                        </tr>
+                        <tr class="ZY2">
+                            <td>远程调辅助</td>
+                            <td>3分钟解决</td>
+                            <td>25R</td>
+                        </tr>
+                        <tr class="ZY">
+                            <td>精灵豆</td>
+                            <td>1000</td>
+                            <td>2R</td>
+                        </tr>
+                        <tr class="ZY">
+                            <td>金币</td>
+                            <td>800W</td>
+                            <td>2R</td>
+                        </tr>
+                        <tr class="ZY">
+                            <td>全精灵</td>
+                            <td>单刷一只1.5R</td>
+                            <td>8R</td>
+                        </tr>
+                        <tr class="ZY">
+                            <td>圣剑满级全材料</td>
+                            <td>圣石,幸运石</td>
+                            <td>8R</td>
+                        </tr>
+                        <tr class="ZY">
+                            <td>坐骑满级拉满材料</td>
+                            <td>培养丹,初中高升阶丹</td>
+                            <td>8R</td>
+                        </tr>
+                        <tr class="ZY">
+                            <td>御神精灵碎片全满</td>
+                            <td>蓝绿紫橙碎片全40R</td>
+                            <td>10R</td>
+                        </tr>
+                        <tr>
+                            <td>满级果</td>
+                            <td>50</td>
+                            <td>2R</td>
+                        </tr>
+                        <tr>
+                            <td>五星宝石</td>
+                            <td>50</td>
+                            <td>2R</td>
+                        </tr>
+                        <tr>
+                            <td>满级神力符文</td>
+                            <td>50</td>
+                            <td>2R</td>
+                        </tr>
+                        <tr>
+                            <td>封印刻章</td>
+                            <td>50</td>
+                            <td>2R</td>
+                        </tr>
+                        <tr>
+                            <td>生命祝福</td>
+                            <td>50,50,50,1套,5000,5000</td>
+                            <td>2R</td>
+                        </tr>
+                        <tr>
+                            <td>max药水</td>
+                            <td>50</td>
+                            <td>2R</td>
+                        </tr>
+                        <tr>
+                            <td>紫色符文</td>
+                            <td>5</td>
+                            <td>2R</td>
+                        </tr>
+                        <tr>
+                            <td>圣衣</td>
+                            <td>1套</td>
+                            <td>2R</td>
+                        </tr>
+                        <tr>
+                            <td>守护之石</td>
+                            <td>5000</td>
+                            <td>2R</td>
+                        </tr>
+                        <tr>
+                            <td>灵石</td>
+                            <td>5000</td>
+                            <td>2R</td>
+                        </tr>
+                        <tr class="ZY2">
+                            <td>全材料拉满</td>
+                            <td>给全材料999</td>
+                            <td>86R</td>
+                        </tr>
+                        <tr class="ZY2">
+                            <td>新号直达40W</td>
+                            <td>给账号3天可达</td>
+                            <td>24R</td>
+                        </tr>
+                        <tr class="ZY2">
+                            <td>新号直达44W</td>
+                            <td>给账号7天可达</td>
+                            <td>35R</td>
+                        </tr>
+                        <tr class="ZY2">
+                            <td>新号直达45W</td>
+                            <td>给账号31天可达</td>
+                            <td>50R</td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+            </section>
+        </main>
+    </div>
+</body>
+</html>
